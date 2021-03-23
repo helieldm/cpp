@@ -94,6 +94,6 @@ public:
         std::cout << std::endl;
     }
 
-    int count() { return length; }
+    size_t count() { return length; }
 };
 #endif

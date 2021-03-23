@@ -13,17 +13,13 @@
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "console": "externalTerminal",
+            "externalConsole": false,
             "MIMode": "gdb",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
-                },
-                {
-                    "description": "Skip raise.c files",
-                    "text": "-interpreter-exec console \"skip -gfi build/glibc-eX1tMB/glibc-2.31/sysdeps/unix/sysv/linux//**/*\""
                 }
             ],
             "preLaunchTask": "C/C++: g++ build active file",

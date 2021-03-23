@@ -1,0 +1,8 @@
+make main -f /home/levy/cpp/TP/Makefile --dry-run --keep-going --print-directory
+make: Entering directory '/home/levy/cpp'
+g++ -c TP/exceptions.cpp -o exceptions.o
+g++ -c TP/student_manager.cpp -o student_manager.o
+g++ -c TP/student.cpp -o student.o
+g++ exceptions.o student_manager.o student.o main.o -o main
+make: Leaving directory '/home/levy/cpp'
+ 

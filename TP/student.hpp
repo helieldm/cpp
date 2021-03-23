@@ -6,9 +6,10 @@
 class Student
 {
     std::string firstname, lastname;
+public:
+
     List<float> grades;
 
-public:
     // Constructeurs
     Student(std::string fn, std::string ln);
     Student();
@@ -16,5 +17,9 @@ public:
     void addGrade(float grade);
     //Récupérer la moyenne
     float getAverage();
+
+    std::string getFname();
+    std::string getLname();
+
 };
 #endif

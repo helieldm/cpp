@@ -14,13 +14,13 @@ Student::Student()
     std::cin >> firstname;
     std::cout << "Entrez un nom" << std::endl;
     std::cin >> lastname;
-    std::cout << "Bonjour " << firstname << " " << lastname << ".";
+    std::cout << "Bonjour " << firstname << " " << lastname << "." << std::endl;
 }
 
 //Ajouter une note
 void Student::addGrade(float grade)
 {
-    std::cout << "Added " << grade << " to list of grades";
+    std::cout << "Added " << grade << " to " << firstname << "'s list of grades" << std::endl;
     grades.push(grade);
 }
 //Récupérer la moyenne
@@ -36,5 +36,8 @@ float Student::getAverage()
     {
         r += grades[i];
     }
-    return r / count;
+    return (r / count);
 }
+
+std::string Student::getFname() { return firstname; }
+std::string Student::getLname() { return lastname; }
